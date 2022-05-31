@@ -1,0 +1,100 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+    
+header {
+    background-color: yellow;
+    height: 80px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-color: aqua;
+    background: url("/images/pets.jpg") no-repeat center fixed;
+    height: 70vh;
+    padding: 30px;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+main article p {
+    font-size: 40px;
+    color: white;
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media only screen and (max-width: 1400px) {
+    header {
+        background-color: lightcoral;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+
+    header {
+        background-color: lightblue;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+
+    header {
+        background-color: orange;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+    header {
+        background-color: green;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 576px) {
+
+     
+    header {
+        background-color: blue;
+        height: 100px;
+        flex-direction: column;
+    }
+
+}
+
+/*X-Small devices (portrait phones, less than 576px)*/
+@media only screen and (max-width: 320px) {
+
+    header {
+        background-color: grey;
+    }
+}
